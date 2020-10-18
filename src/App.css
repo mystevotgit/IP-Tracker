@@ -90,3 +90,29 @@
   position: absolute;
   top: 150px;
 }
+
+
+@media only screen and (max-width: 770px) {
+  .display {
+    flex-direction: column;
+    height: 210px;
+  }
+  .data {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px;
+    width: 90%;
+  }
+  .info-title {
+    padding: 0px;
+    text-align: left;
+    width: 45%;
+    height: 0px;
+  }
+  .info-data {
+    padding: 0px;
+    text-align: right;
+    width: 55%;
+    height: 0px;
+  }
+}

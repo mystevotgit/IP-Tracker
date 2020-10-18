@@ -44,7 +44,7 @@ export default function App() {
         <div className="display">
           <Data title = "CURRENT IP ADDRESS" info = {data.ip} />
           <Data title = "LOCATION" info = {data.location?.city +', ' + data.location?.country +' '+ data.location?.postalCode}/>
-          <Data title = "TIMEZONE" info = {data.location?.timezone} />
+          <Data title = "TIMEZONE" info = {"UTC " + data.location?.timezone} />
           <Data title = "ISP" info = {data.isp} />
         </div>
       </div>
