@@ -1,5 +1,5 @@
 {
-  "name": "ip-tracker",
+  "name": "leaflet-react-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,9 +7,12 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3"
+    "leaflet": "^1.6.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-leaflet": "^2.6.0",
+    "react-scripts": "3.3.0",
+    "swr": "^0.1.15"
   },
   "scripts": {
     "start": "react-scripts start",
