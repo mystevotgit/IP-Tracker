@@ -115,4 +115,13 @@
     width: 55%;
     height: 0px;
   }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .top-form {
+    top: 120px;
+    width: 400px;
+  }
 }
