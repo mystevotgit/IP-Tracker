@@ -57,12 +57,11 @@ export default function App() {
       <h1 className="title">IP Address Tracker</h1>
       <h5 className="subtitle" >Get an IP location (e.g 8.8.8.8 or google.com or your email). Default IP is your current network IP.</h5>
         <form className="top-form" onSubmit={handleSubmit}>
-          <label>
-          <input className="input" type="text" placeholder="Enter an IP, website or email address" value={input} onChange={e=> setInput(e.target.value)}/>
-          </label>
+          <label for input ></label>
+          <input id="input" className="input" type="text" placeholder="Enter an IP, website or email address" value={input} onChange={e=> setInput(e.target.value)}/>
           <input className="submit" type="submit" value="  >  " />
         </form>
-        <h3 className="error" >{error?.messages + " "}</h3>
+        <h3 className="error" >{error?.messages}</h3>
         <img className="top-image" src={pattern} alt="Logo"/>
         <div className="display">
           <Data title = "CURRENT IP ADDRESS" info = {data.ip} />
