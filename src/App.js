@@ -65,7 +65,7 @@ export default function App() {
         <img className="top-image" src={pattern} alt="Logo"/>
         <div className="display">
           <div className="group">
-            <Data title = "CURRENT IP ADDRESS" info = {data.ip} />
+            <Data title = "IP ADDRESS" info = {data.ip} />
             <Data title = "LOCATION" info = {data.location?.city +', ' + data.location?.country +' '+ data.location?.postalCode}/>
           </div>
           <div className="group">
