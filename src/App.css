@@ -23,8 +23,13 @@
   z-index: 2;
   background-color: white;
   width: 75%;
-  height: 180px;
+  min-height: 180px;
   border-radius: 20px;
+}
+
+.display .group {
+  display: flex;
+  justify-content: space-around;
 }
 
 .top-form {
@@ -81,7 +86,6 @@
 
 .data {
   border-left: 2px;
-  padding: 30px;
   width: 25%;
 }
 
@@ -93,7 +97,7 @@
 }
 
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
   .display {
     flex-direction: column;
     height: 210px;
@@ -127,6 +131,12 @@
   }
 
   .display {
-    min-height: 200px;
+    padding: auto;
+    min-height: 300px;
+    justify-content: space-evenly;
+  }
+
+  .display .group {
+    display: block;
   }
 }

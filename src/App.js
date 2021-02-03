@@ -64,10 +64,14 @@ export default function App() {
         <h3 className="error" >{error?.messages}</h3>
         <img className="top-image" src={pattern} alt="Logo"/>
         <div className="display">
-          <Data title = "CURRENT IP ADDRESS" info = {data.ip} />
-          <Data title = "LOCATION" info = {data.location?.city +', ' + data.location?.country +' '+ data.location?.postalCode}/>
-          <Data title = "TIMEZONE" info = {"UTC " + data.location?.timezone} />
-          <Data title = "ISP" info = {data.isp} />
+          <div className="group">
+            <Data title = "CURRENT IP ADDRESS" info = {data.ip} />
+            <Data title = "LOCATION" info = {data.location?.city +', ' + data.location?.country +' '+ data.location?.postalCode}/>
+          </div>
+          <div className="group">
+            <Data title = "TIMEZONE" info = {"UTC " + data.location?.timezone} />
+            <Data title = "ISP" info = {data.isp} />
+          </div>
         </div>
       </div>
       <Map center={loc} zoom={13}>
