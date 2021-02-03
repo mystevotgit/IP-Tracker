@@ -42,6 +42,7 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   font-size: larger;
+  padding: 5px 10px;
 }
 
 .submit {
@@ -122,6 +123,10 @@
 
   .top-form {
     top: 120px;
-    width: 400px;
+    width: 60vw;
+  }
+
+  .display {
+    min-height: 200px;
   }
 }
