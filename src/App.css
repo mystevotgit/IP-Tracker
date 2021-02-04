@@ -107,7 +107,7 @@
   .data {
     display: flex;
     justify-content: space-around;
-    margin: 2px 3.5vw;
+    margin: 0px 3.5vw;
     width: 90%;
   }
   .info-title {
@@ -120,7 +120,7 @@
   .info-data {
     padding: 0px;
     text-align: right;
-    width: 58%;
+    width: 57%;
     font-size: 1rem;
   }
 
